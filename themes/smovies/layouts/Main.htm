@@ -1,0 +1,126 @@
+==
+<html>
+	<head>
+		<title>{{ this.page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{'assets/css/bootstrap-lightbox.css'|theme}}" />
+		<link rel="stylesheet" href="{{'assets/css/lightbox.css'|theme}}" />
+		<link rel="stylesheet" href="{{'assets/css/main.css'|theme}}" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<!-- Nav -->
+		<nav class=" bg-transparent navbar fixed-top navbar-expand-lg navbar-light">
+		  <a class="navbar-brand" style="font-family: 'Modak', cursive; font-size: 30px; color: white;" href="{{'smovies'|page}}"><img id="logo" class="invert" src="{{'assets/images/logo.png'|theme | resize(100,50)}}"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="links navbar-nav">
+			      <li style="border-radius: 50px;" class="nav-item btn {% if this.page.id == 'smovies' %} active btn-outline-light bg-dark {% endif %}">
+			        <a style="color: white;" class="nav-link" href="{{'smovies'|page}}">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li style="border-radius: 50px;" class="nav-item btn {% if this.page.id == 'movies' %} active btn-outline-light bg-dark {% endif %}">
+		        <a style="color: white;" class="nav-link" href="{{'movies'|page}}">Movies</a>
+		      </li>
+		    </ul>
+  </div>
+</nav>
+			
+		{% page %}	
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{'assets/js/jquery.min.js'|theme}}"></script>
+			<script src="{{'assets/js/jquery.scrollex.min.js'|theme}}"></script>
+			<script src="{{'assets/js/skel.min.js'|theme}}"></script>
+			<script src="{{'assets/js/util.js'|theme}}"></script>
+			<script defer src="{{'assets/js/lightbox.js'|theme}}"></script>
+			<script src="{{'assets/js/bootstrap-lightbox.min.js'|theme}}"></script>
+			<script src="{{'assets/js/main.js'|theme}}"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			
+			<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+			<script>
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('navbar-dark bg-black');
+                  $('#logo').addClass('invert')
+                  $('nav').removeClass('bg-transparent bg-trans');
+
+            }
+
+            else {
+                  $('nav').removeClass('navbar-dark bg-black');
+                  $('nav').addClass('bg-transparent bg-trans');
+            }
+      })
+			</script>
+			
+
+	</body>
+</html>

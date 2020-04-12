@@ -1,0 +1,10 @@
+name: Genres
+form: $/sunal/movies/models/genre/fields.yaml
+modelClass: Sunal\Movies\Models\Genre
+defaultRedirect: sunal/movies/genres
+create:
+    redirect: 'sunal/movies/genres/update/:id'
+    redirectClose: sunal/movies/genres
+update:
+    redirect: sunal/movies/genres
+    redirectClose: sunal/movies/genres

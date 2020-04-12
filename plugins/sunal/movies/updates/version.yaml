@@ -1,0 +1,41 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table sunal_movies_'
+    - builder_table_create_sunal_movies_.php
+1.0.3:
+    - 'Updated table sunal_movies_'
+    - builder_table_update_sunal_movies_.php
+1.0.4:
+    - 'Created table sunal_movies_genres'
+    - builder_table_create_sunal_movies_genres.php
+1.0.5:
+    - 'Created table sunal_movies_movies_genres'
+    - builder_table_create_sunal_movies_movies_genres.php
+1.0.6:
+    - 'Updated table sunal_movies_movies_genres'
+    - builder_table_update_sunal_movies_movie_genres.php
+1.0.7:
+    - 'Updated table sunal_movies_movie_genres'
+    - builder_table_update_sunal_movies_movies_genres.php
+1.0.8:
+    - 'Updated table sunal_movies_movies_genres'
+    - builder_table_update_sunal_movies_movies_genres_2.php
+1.0.9:
+    - 'Updated table sunal_movies_movies_genres'
+    - builder_table_update_sunal_movies_movie_genres_2.php
+1.0.10:
+    - 'Updated table sunal_movies_movie_genres'
+    - builder_table_update_sunal_movies_movies_genres_3.php
+1.0.11:
+    - 'Drop table sunal_movies_movies_genres'
+    - builder_table_delete_sunal_movies_movies_genres.php
+1.0.12:
+    - 'Created table sunal_movies_movies_genres'
+    - builder_table_create_sunal_movies_movies_genres_2.php
+1.0.13:
+    - 'Drop table sunal_movies_movies_genres'
+    - builder_table_delete_sunal_movies_movies_genres_2.php
+1.0.14:
+    - 'Created table sunal_movies_movies_genres'
+    - builder_table_create_sunal_movies_movies_genres_3.php

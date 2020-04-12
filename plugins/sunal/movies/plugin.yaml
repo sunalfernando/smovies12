@@ -1,0 +1,16 @@
+plugin:
+    name: 'sunal.movies::lang.plugin.name'
+    description: 'sunal.movies::lang.plugin.description'
+    author: sunal
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: sunal/movies/movie
+        icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: sunal/movies/genres
+                icon: icon-tag

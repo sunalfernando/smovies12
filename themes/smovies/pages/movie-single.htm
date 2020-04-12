@@ -1,0 +1,45 @@
+title = "movie single"
+url = "/movie-single/:slug?"
+layout = "Main"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Sunal\Movies\Models\Movies"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<div class="bg-movies"> <img style="width: 100%;" src="{{record.cover.path}}"></div>
+ 
+<section>
+<div class="justify-content-md-center clearfix bg-light">
+	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left">
+	<div style="padding-top:20px;" class="container-fluid">
+    <h1 class="badge badge-success">{{record.year}}</h1>
+    <h1 class="badge badge-success">{{record.quality}}</h1>
+		<div class="col-md-12"><h5>{{record.description|raw}}</h5></div>
+      <div>
+        <small>Genres: </small>
+         {% for genre in record.genres %}
+          <a href="/genres/{{genre.slug}}"><small class="badge badge-secondary">{{genre.genre_title}}</small></a>
+    {% endfor %}
+      </div>
+      <br>
+		 	{% for image in record.gallery %}		 		
+	  	<div class="container grid">
+	    <img class="hover-shadow float-left img-thumbnail img-item border-dark" style="margin-right: 5px;" src="{{image.path}}">
+		</div>
+		{% endfor %}
+
+  </div>
+</div>
+</section>
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

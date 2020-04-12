@@ -1,0 +1,16 @@
+columns:
+    name:
+        label: 'Movie  Title'
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: Year
+        type: text
+        searchable: true
+        sortable: true
+    quality:
+        label: Quality
+        type: text
+        searchable: true
+        sortable: true

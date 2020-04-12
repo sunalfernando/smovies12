@@ -1,0 +1,39 @@
+title = "Genres"
+url = "/genres/:slug"
+layout = "Main"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Sunal\Movies\Models\Genre"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "genre_title"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<section>
+	<div style="margin-top: 10%;"class="jumbotron clearfix">
+		{% if record %}
+		    <h2>{{ attribute(record, displayColumn) }} Movies</h2>
+
+		    {% for movie in record.movies %}
+              <div class="card text-white bg-primary mb-3 float-left" style=" margin-right: 10px; max-width: 18rem;">
+			  <div style="z-index: 1" class="rounded card-img-overlay">
+			  	<a style="color: white; text-shadow: 4px 4px 8px black" href="/movie-single/{{movie.slug}}"><h5 class="card-header card-img-overlay">{{movie.name}}</h5></a>
+			  	
+
+			  </div>
+			  <img class="card-img" style=" filter: blur(0.7px);" src="{{movie.poster.path|resize(200,200)}}">
+			</div>
+    		{% endfor %}
+
+		{% else %}
+		    {{ notFoundMessage }}
+		{% endif %}
+
+	</div>
+
+</section>

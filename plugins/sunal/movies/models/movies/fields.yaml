@@ -1,0 +1,76 @@
+tabs:
+    fields:
+        name:
+            label: 'Movie Title'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        description:
+            label: 'Movie Description'
+            size: ''
+            span: auto
+            type: richeditor
+            tab: 'Tab 1'
+        year:
+            label: 'Movie Year'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        slug:
+            label: Slug
+            span: auto
+            preset:
+                field: name
+                type: slug
+            type: text
+            tab: 'Tab 1'
+        poster:
+            label: Poster
+            mode: image
+            imageWidth: '200'
+            imageHeight: '300'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'Tab 1'
+        gallery:
+            label: Gallery
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Tab 1'
+        cover:
+            label: 'Movie Cover'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Tab 1'
+        quality:
+            label: 'Movie Quality'
+            options:
+                HD: HD
+                BRRip: BRRip
+                TS: TS
+                SD: SD
+                CAM: CAM
+            span: auto
+            type: balloon-selector
+            tab: 'Tab 1'
+        genres:
+            label: Genres
+            nameFrom: genre_title
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: 'Tab 1'

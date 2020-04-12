@@ -1,0 +1,10 @@
+name: Movie
+form: $/sunal/movies/models/movies/fields.yaml
+modelClass: Sunal\Movies\Models\Movies
+defaultRedirect: sunal/movies/movie
+create:
+    redirect: 'sunal/movies/movie/update/:id'
+    redirectClose: sunal/movies/movie
+update:
+    redirect: sunal/movies/movie
+    redirectClose: sunal/movies/movie
