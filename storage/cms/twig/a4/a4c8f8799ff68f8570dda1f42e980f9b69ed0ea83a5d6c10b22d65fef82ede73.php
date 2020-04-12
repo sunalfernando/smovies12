@@ -54,7 +54,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
 \t<img src=\"";
             // line 10
             echo call_user_func_array($this->env->getFilter('resize')->getCallable(), [twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "poster", [], "any", false, false, false, 10), "path", [], "any", false, false, false, 10), 200, 300]);
-            echo "\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-success
+            echo "\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-secondary
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">";
             // line 12
@@ -95,7 +95,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "gallery", [], "any", false, false, false, 22));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
                 echo "\t\t \t\t
-\t  \t<div class=\"container grid\">
+\t  \t<div class=\"grid\">
 \t    <img class=\"hover-shadow float-left img-thumbnail img-item border-dark\" style=\"margin-right: 5px;\" src=\"";
                 // line 24
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 24), "html", null, true);
@@ -109,11 +109,21 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
             // line 27
             echo "
   </div>
-</div>
+  <div class=\"jumbotron\">
+    <h1 class=\"display-3\">Jumbo heading</h1>
+    <p class=\"lead\">Jumbo helper text</p>
+    <hr class=\"my-2\">
+    <p>More info</p>
+    <p class=\"lead\">
+      <a class=\"btn btn-primary btn-lg\" href=\"Jumbo action link\" role=\"button\">Jumbo action name</a>
+    </p>
+  </div>
 </section>
+
+
 ";
         } else {
-            // line 32
+            // line 42
             echo "    ";
             echo twig_escape_filter($this->env, ($context["notFoundMessage"] ?? null), "html", null, true);
             echo "
@@ -133,7 +143,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
 
     public function getDebugInfo()
     {
-        return array (  117 => 32,  110 => 27,  101 => 24,  94 => 22,  90 => 20,  79 => 18,  75 => 17,  69 => 14,  65 => 13,  61 => 12,  56 => 10,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  127 => 42,  110 => 27,  101 => 24,  94 => 22,  90 => 20,  79 => 18,  75 => 17,  69 => 14,  65 => 13,  61 => 12,  56 => 10,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -147,7 +157,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
  
 <section>
 <div class=\"justify-content-md-center clearfix bg-light\">
-\t<img src=\"{{record.poster.path|resize(200,300)}}\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-success
+\t<img src=\"{{record.poster.path|resize(200,300)}}\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-secondary
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">{{record.year}}</h1>
     <h1 class=\"badge badge-success\">{{record.quality}}</h1>
@@ -160,14 +170,24 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
       </div>
       <br>
 \t\t \t{% for image in record.gallery %}\t\t \t\t
-\t  \t<div class=\"container grid\">
+\t  \t<div class=\"grid\">
 \t    <img class=\"hover-shadow float-left img-thumbnail img-item border-dark\" style=\"margin-right: 5px;\" src=\"{{image.path}}\">
 \t\t</div>
 \t\t{% endfor %}
 
   </div>
-</div>
+  <div class=\"jumbotron\">
+    <h1 class=\"display-3\">Jumbo heading</h1>
+    <p class=\"lead\">Jumbo helper text</p>
+    <hr class=\"my-2\">
+    <p>More info</p>
+    <p class=\"lead\">
+      <a class=\"btn btn-primary btn-lg\" href=\"Jumbo action link\" role=\"button\">Jumbo action name</a>
+    </p>
+  </div>
 </section>
+
+
 {% else %}
     {{ notFoundMessage }}
 {% endif %}", "F:\\website\\smovies/themes/smovies/pages/movie-single.htm", "");
