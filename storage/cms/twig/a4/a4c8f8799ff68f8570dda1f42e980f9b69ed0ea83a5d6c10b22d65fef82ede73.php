@@ -54,7 +54,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
 \t<img src=\"";
             // line 10
             echo call_user_func_array($this->env->getFilter('resize')->getCallable(), [twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "poster", [], "any", false, false, false, 10), "path", [], "any", false, false, false, 10), 200, 300]);
-            echo "\" style=\"margin:20px;\" class=\"float-left\">
+            echo "\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-success
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">";
             // line 12
@@ -147,7 +147,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
  
 <section>
 <div class=\"justify-content-md-center clearfix bg-light\">
-\t<img src=\"{{record.poster.path|resize(200,300)}}\" style=\"margin:20px;\" class=\"float-left\">
+\t<img src=\"{{record.poster.path|resize(200,300)}}\" style=\"margin:20px;\" class=\"float-left img-thumbnail border-success
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">{{record.year}}</h1>
     <h1 class=\"badge badge-success\">{{record.quality}}</h1>

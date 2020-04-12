@@ -1,4 +1,4 @@
-1586683378a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1508:"title = "movie single"
+1586693733a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1535:"title = "movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -19,7 +19,7 @@ notFoundMessage = "Record not found"
  
 <section>
 <div class="justify-content-md-center clearfix bg-light">
-	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left">
+	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left img-thumbnail border-success
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
     <h1 class="badge badge-success">{{record.quality}}</h1>
@@ -42,7 +42,7 @@ notFoundMessage = "Record not found"
 </section>
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:5:"mtime";i:1586508327;s:6:"markup";s:1235:"{% set record = builderDetails.record %}
+{% endif %}";s:5:"mtime";i:1586693133;s:6:"markup";s:1262:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
@@ -51,7 +51,7 @@ notFoundMessage = "Record not found"
  
 <section>
 <div class="justify-content-md-center clearfix bg-light">
-	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left">
+	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left img-thumbnail border-success
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
     <h1 class="badge badge-success">{{record.quality}}</h1>
