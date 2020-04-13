@@ -110,7 +110,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
             echo "
   </div>
   <div class=\"jumbotron\">
-    <h1 class=\"display-3\">Jumbo</h1>
+    <h1 class=\"display-3\">Trailer Area</h1>
     <p class=\"lead\">Jumbo helper text</p>
     <hr class=\"my-2\">
     <p>More info</p>
@@ -177,7 +177,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
 
   </div>
   <div class=\"jumbotron\">
-    <h1 class=\"display-3\">Jumbo</h1>
+    <h1 class=\"display-3\">Trailer Area</h1>
     <p class=\"lead\">Jumbo helper text</p>
     <hr class=\"my-2\">
     <p>More info</p>

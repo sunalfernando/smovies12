@@ -1,4 +1,4 @@
-1586705844a:1:{s:11:"smovies.htm";a:10:{s:8:"fileName";s:11:"smovies.htm";s:7:"content";s:2696:"title = "Smovies"
+1586760143a:1:{s:11:"smovies.htm";a:10:{s:8:"fileName";s:11:"smovies.htm";s:7:"content";s:2725:"title = "Smovies"
 url = "/"
 layout = "Main"
 is_hidden = 0
@@ -50,7 +50,7 @@ pageNumber = "{{ :page }}"
 			  	{% for record in records %}
 			  	{% spaceless %}
 			  	{% if record %}
-			      <div class="flip-card">
+			      <div style="margin-bottom: 10px;" class="flip-card">
 
 				  <div class=" rounded flip-card-inner">
 				    <div class=" rounded flip-card-front ">
@@ -78,7 +78,7 @@ pageNumber = "{{ :page }}"
 			</section>
 
 
-		";s:5:"mtime";i:1586094280;s:6:"markup";s:2342:"{% set records = builderList.records %}
+		";s:5:"mtime";i:1586759383;s:6:"markup";s:2371:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -114,7 +114,7 @@ pageNumber = "{{ :page }}"
 			  	{% for record in records %}
 			  	{% spaceless %}
 			  	{% if record %}
-			      <div class="flip-card">
+			      <div style="margin-bottom: 10px;" class="flip-card">
 
 				  <div class=" rounded flip-card-inner">
 				    <div class=" rounded flip-card-front ">
