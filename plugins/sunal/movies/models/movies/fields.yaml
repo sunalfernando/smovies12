@@ -74,3 +74,8 @@ tabs:
             span: auto
             type: relation
             tab: 'Tab 1'
+        trailer:
+            label: Trailer
+            span: auto
+            type: text
+            tab: 'Tab 1'

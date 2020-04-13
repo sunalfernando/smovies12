@@ -1,4 +1,4 @@
-1586802945a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:5165:"==
+1586803122a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:4304:"==
 <html>
 	<head>
 		<title>{{ this.page.title }}</title>
@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="{{'assets/css/main.css'|theme}}" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	</head>
 	<body>
@@ -57,73 +58,33 @@
 			<script src="{{'assets/js/main.js'|theme}}"></script>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>			
+			<script>
+			
+			</script>
 			
 			<script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+     		// Scrolling Effect
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-			<script>
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
+     		 $(window).on("scroll", function() {
             if($(window).scrollTop()) {
                   $('nav').addClass('navbar-dark bg-black');
                   $('#logo').addClass('invert')
                   $('nav').removeClass('bg-transparent bg-trans');
 
-            }
+           		 }
 
-            else {
-                  $('nav').removeClass('navbar-dark bg-black');
-                  $('nav').addClass('bg-transparent bg-trans');
-            }
-      })
+					else {
+						$('nav').removeClass('navbar-dark bg-black');
+						$('nav').addClass('bg-transparent bg-trans');
+					}
+			})
 			</script>
 			
 
 	</body>
-</html>";s:5:"mtime";i:1586802158;s:6:"markup";s:5162:"<html>
+</html>";s:5:"mtime";i:1586802516;s:6:"markup";s:4301:"<html>
 	<head>
 		<title>{{ this.page.title }}</title>
 		<meta charset="utf-8" />
@@ -133,6 +94,7 @@ function showSlides(n) {
 		<link rel="stylesheet" href="{{'assets/css/main.css'|theme}}" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	</head>
 	<body>
@@ -181,68 +143,28 @@ function showSlides(n) {
 			<script src="{{'assets/js/main.js'|theme}}"></script>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>			
+			<script>
+			
+			</script>
 			
 			<script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+     		// Scrolling Effect
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-			<script>
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
+     		 $(window).on("scroll", function() {
             if($(window).scrollTop()) {
                   $('nav').addClass('navbar-dark bg-black');
                   $('#logo').addClass('invert')
                   $('nav').removeClass('bg-transparent bg-trans');
 
-            }
+           		 }
 
-            else {
-                  $('nav').removeClass('navbar-dark bg-black');
-                  $('nav').addClass('bg-transparent bg-trans');
-            }
-      })
+					else {
+						$('nav').removeClass('navbar-dark bg-black');
+						$('nav').addClass('bg-transparent bg-trans');
+					}
+			})
 			</script>
 			
 

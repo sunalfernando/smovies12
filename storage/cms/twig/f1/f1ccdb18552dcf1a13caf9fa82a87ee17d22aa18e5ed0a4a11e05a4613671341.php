@@ -119,7 +119,7 @@ class __TwigTemplate_d422d7e1395fa87fe9726f7469a1dcccccdbd952c25e60de979cee90048
             echo "\t\t\t  \t";
             if ($context["record"]) {
                 // line 37
-                echo "\t\t\t      <div class=\"flip-card\">
+                echo "\t\t\t      <div style=\"margin-bottom: 10px;\" class=\"flip-card\">
 
 \t\t\t\t  <div class=\" rounded flip-card-inner\">
 \t\t\t\t    <div class=\" rounded flip-card-front \">
@@ -232,7 +232,7 @@ class __TwigTemplate_d422d7e1395fa87fe9726f7469a1dcccccdbd952c25e60de979cee90048
 \t\t\t  \t{% for record in records %}
 \t\t\t  \t{% spaceless %}
 \t\t\t  \t{% if record %}
-\t\t\t      <div class=\"flip-card\">
+\t\t\t      <div style=\"margin-bottom: 10px;\" class=\"flip-card\">
 
 \t\t\t\t  <div class=\" rounded flip-card-inner\">
 \t\t\t\t    <div class=\" rounded flip-card-front \">

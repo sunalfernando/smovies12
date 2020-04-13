@@ -137,4 +137,6 @@
   'Cms\\Facades\\Cms' => 'modules/cms/facades/Cms.php',
   'Cms\\Helpers\\Cms' => 'modules/cms/helpers/Cms.php',
   'Cms\\Classes\\MediaViewHelper' => 'modules/cms/classes/MediaViewHelper.php',
+  'System\\Models\\Parameter' => 'modules/system/models/Parameter.php',
+  'Cms\\Twig\\PageNode' => 'modules/cms/twig/PageNode.php',
 );
