@@ -1,0 +1,142 @@
+1586802945a:1:{s:11:"smovies.htm";a:10:{s:8:"fileName";s:11:"smovies.htm";s:7:"content";s:2616:"title = "Smovies"
+url = "/"
+layout = "Main"
+is_hidden = 0
+
+[builderList]
+modelClass = "Sunal\Movies\Models\Movies"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "movie-single"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+<!-- Banner -->
+			<section style="overflow: hidden;" class="banner full">
+				{% for record in records %}
+				<article>
+					{% spaceless %}
+                {% if detailsPage %}
+					<img src="{{ record.cover.path }}" alt="" />
+					<div class="inner">
+						<header>
+						{{html_limit(record.description,100)|raw}}
+							<h2>{{record.name}}</h2>
+						</header>
+					</div>
+						</article>
+						    {% endif %}
+		            {% endspaceless %}
+					        
+			    {% else %}
+			        <li class="no-data">{{ noRecordsMessage }}</li>
+			    {% endfor %}
+				
+			</section>
+		<!-- One -->
+			<section style=" box-shadow: 100px;	" id="one" class="wrapper style2">
+					<div class="row">
+			  	{% for record in records %}
+			  	{% spaceless %}
+			  	{% if record %}
+			      <div class="flip-card">
+
+				  <div class=" rounded flip-card-inner">
+				    <div class=" rounded flip-card-front ">
+				      <img class="rounded" style=" box-shadow: 50px 50px inner;" src="{{ record.poster.path| resize(200, 300) }}" alt="Avatar">
+				    </div>
+				    <div class=" rounded flip-card-back">
+				    	<div class=" rounded card-img-overlay bg-text">
+				    		<span style="float: right;" class="badge badge-pill badge-primary">{{ record.year}}</span>
+				    		<span style="float: left;" class="badge badge-dark">{{record.quality}}</span>
+				    		<a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+				    		<h2>{{ record.name }}</h2></a> 
+				      	<a class="text-white" href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}"><p>{{ html_limit(record.description,100)|raw}}</p> </a>
+				    	</div>
+				    	<img style=" filter: blur(8px); -webkit-filter: blur(8px);" src="{{record.poster.path | resize(200, 300)}}">
+				    	
+				      
+				    </div>
+				  </div>
+				</div>	
+				{% endif %}
+			  {% endspaceless %}
+			  {% endfor %}		    
+			  </div>
+			  
+			</section>
+
+
+		";s:5:"mtime";i:1586802158;s:6:"markup";s:2281:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+<!-- Banner -->
+			<section style="overflow: hidden;" class="banner full">
+				{% for record in records %}
+				<article>
+					{% spaceless %}
+                {% if detailsPage %}
+					<img src="{{ record.cover.path }}" alt="" />
+					<div class="inner">
+						<header>
+						{{html_limit(record.description,100)|raw}}
+							<h2>{{record.name}}</h2>
+						</header>
+					</div>
+						</article>
+						    {% endif %}
+		            {% endspaceless %}
+					        
+			    {% else %}
+			        <li class="no-data">{{ noRecordsMessage }}</li>
+			    {% endfor %}
+				
+			</section>
+		<!-- One -->
+			<section style=" box-shadow: 100px;	" id="one" class="wrapper style2">
+					<div class="row">
+			  	{% for record in records %}
+			  	{% spaceless %}
+			  	{% if record %}
+			      <div class="flip-card">
+
+				  <div class=" rounded flip-card-inner">
+				    <div class=" rounded flip-card-front ">
+				      <img class="rounded" style=" box-shadow: 50px 50px inner;" src="{{ record.poster.path| resize(200, 300) }}" alt="Avatar">
+				    </div>
+				    <div class=" rounded flip-card-back">
+				    	<div class=" rounded card-img-overlay bg-text">
+				    		<span style="float: right;" class="badge badge-pill badge-primary">{{ record.year}}</span>
+				    		<span style="float: left;" class="badge badge-dark">{{record.quality}}</span>
+				    		<a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+				    		<h2>{{ record.name }}</h2></a> 
+				      	<a class="text-white" href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}"><p>{{ html_limit(record.description,100)|raw}}</p> </a>
+				    	</div>
+				    	<img style=" filter: blur(8px); -webkit-filter: blur(8px);" src="{{record.poster.path | resize(200, 300)}}">
+				    	
+				      
+				    </div>
+				  </div>
+				</div>	
+				{% endif %}
+			  {% endspaceless %}
+			  {% endfor %}		    
+			  </div>
+			  
+			</section>";s:4:"code";N;s:5:"title";s:7:"Smovies";s:3:"url";s:1:"/";s:6:"layout";s:4:"Main";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:9:{s:10:"modelClass";s:26:"Sunal\Movies\Models\Movies";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:12:"movie-single";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}}}
