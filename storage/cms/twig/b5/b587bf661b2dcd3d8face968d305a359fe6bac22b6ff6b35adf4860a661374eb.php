@@ -124,9 +124,12 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
             // line 40
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "name", [], "any", false, false, false, 40), "html", null, true);
             echo " Trailer</h1>
-    <iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/PVxprj4YSAM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+    <iframe width=\"853\" height=\"480\" src=\"";
+            // line 41
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "trailer", [], "any", false, false, false, 41), "html", null, true);
+            echo "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
   </div>
-  
+
 </section>
 ";
         } else {
@@ -150,7 +153,7 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
 
     public function getDebugInfo()
     {
-        return array (  134 => 46,  125 => 40,  118 => 35,  108 => 31,  101 => 29,  97 => 27,  86 => 25,  82 => 24,  77 => 22,  73 => 21,  69 => 20,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  137 => 46,  129 => 41,  125 => 40,  118 => 35,  108 => 31,  101 => 29,  97 => 27,  86 => 25,  82 => 24,  77 => 22,  73 => 21,  69 => 20,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -195,9 +198,9 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
   </div>
   <div class=\"jumbotron\">
     <h1 class=\"display-3\">{{record.name}} Trailer</h1>
-    <iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/PVxprj4YSAM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+    <iframe width=\"853\" height=\"480\" src=\"{{record.trailer}}\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
   </div>
-  
+
 </section>
 {% else %}
     {{ notFoundMessage }}

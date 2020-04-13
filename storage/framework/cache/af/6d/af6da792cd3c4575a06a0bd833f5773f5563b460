@@ -1,4 +1,4 @@
-1586803122a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:2182:"title = "Movie single"
+1586803514a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:2157:"title = "Movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -50,15 +50,15 @@ notFoundMessage = "Record not found"
   </div>
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer</h1>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/PVxprj4YSAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="{{record.trailer}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  
+
 </section>
 {% else %}
     {{ notFoundMessage }}
 {% endif %}
 
-";s:5:"mtime";i:1586802516;s:6:"markup";s:1919:"{% set record = builderDetails.record %}
+";s:5:"mtime";i:1586802907;s:6:"markup";s:1894:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
@@ -98,9 +98,9 @@ notFoundMessage = "Record not found"
   </div>
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer</h1>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/PVxprj4YSAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="{{record.trailer}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  
+
 </section>
 {% else %}
     {{ notFoundMessage }}
