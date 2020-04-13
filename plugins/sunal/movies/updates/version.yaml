@@ -39,3 +39,6 @@
 1.0.14:
     - 'Created table sunal_movies_movies_genres'
     - builder_table_create_sunal_movies_movies_genres_3.php
+1.0.15:
+    - 'Updated table sunal_movies_'
+    - builder_table_update_sunal_movies__2.php

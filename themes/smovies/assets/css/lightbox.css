@@ -19,6 +19,10 @@ body{
   cursor: pointer;
 
 }
+.vid {
+  cursor: pointer;
+
+}
 
 #lightbox {
   position: fixed;

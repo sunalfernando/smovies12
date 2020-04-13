@@ -1,4 +1,4 @@
-1586760143a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1827:"title = "Movie single"
+1586802004a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:2238:"title = "Movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -19,40 +19,45 @@ notFoundMessage = "Record not found"
  
 <section>
 <div class="justify-content-md-center clearfix bg-light">
-	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left img-thumbnail border-secondary
+  <div class="card bg-dark text-white float-left" style="max-width: 200px; max-height: 300px; margin: 10px;">
+  <img class="card-img" src="{{record.poster.path}}" alt="">
+
+  <div class="card-img-overlay" style="top: 30%; justify-content: center; align-items: center; text-align: center;">
+    <h4 class="card-title">Title</h4>
+    <p style="font-size: 50px;" class="card-text vid" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-play"></i></p>
+    
+  </div>
+</div>
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
     <h1 class="badge badge-success">{{record.quality}}</h1>
 		<div class="col-md-12"><h5>{{record.description|raw}}</h5></div>
-      <div>
         <small>Genres: </small>
          {% for genre in record.genres %}
           <a href="/genres/{{genre.slug}}"><small class="badge badge-secondary">{{genre.genre_title}}</small></a>
     {% endfor %}
-      </div>
       <br>
-		 	{% for image in record.gallery %}		 		
-	  	<div class="grid">
-	    <img class="hover-shadow float-left img-thumbnail img-item border-dark" style="margin-right: 5px;" src="{{image.path}}">
-		</div>
-		{% endfor %}
+		 	<div>
+        {% for image in record.gallery %}		 		
+        <div class="grid">
+        <img class="hover-shadow float-left img-thumbnail img-item border-dark" style="margin-right: 5px;" src="{{image.path}}">
+      </div>
+      
+      {% endfor %}
+      </div>
+       </div>
 
   </div>
   <div class="jumbotron">
-    <h1 class="display-3">Trailer Area</h1>
-    <p class="lead">Jumbo helper text</p>
-    <hr class="my-2">
-    <p>More info</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-    </p>
+    <h1 class="display-3">{{record.name}} Trailer</h1>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/PVxprj4YSAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>
-
-
 {% else %}
     {{ notFoundMessage }}
-{% endif %}";s:5:"mtime";i:1586705347;s:6:"markup";s:1554:"{% set record = builderDetails.record %}
+{% endif %}
+
+";s:5:"mtime";i:1586801402;s:6:"markup";s:1961:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
@@ -61,37 +66,40 @@ notFoundMessage = "Record not found"
  
 <section>
 <div class="justify-content-md-center clearfix bg-light">
-	<img src="{{record.poster.path|resize(200,300)}}" style="margin:20px;" class="float-left img-thumbnail border-secondary
+  <div class="card bg-dark text-white float-left" style="max-width: 200px; max-height: 300px; margin: 10px;">
+  <img class="card-img" src="{{record.poster.path}}" alt="">
+
+  <div class="card-img-overlay" style="top: 30%; justify-content: center; align-items: center; text-align: center;">
+    <h4 class="card-title">Title</h4>
+    <p style="font-size: 50px;" class="card-text vid" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-play"></i></p>
+    
+  </div>
+</div>
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
     <h1 class="badge badge-success">{{record.quality}}</h1>
 		<div class="col-md-12"><h5>{{record.description|raw}}</h5></div>
-      <div>
         <small>Genres: </small>
          {% for genre in record.genres %}
           <a href="/genres/{{genre.slug}}"><small class="badge badge-secondary">{{genre.genre_title}}</small></a>
     {% endfor %}
-      </div>
       <br>
-		 	{% for image in record.gallery %}		 		
-	  	<div class="grid">
-	    <img class="hover-shadow float-left img-thumbnail img-item border-dark" style="margin-right: 5px;" src="{{image.path}}">
-		</div>
-		{% endfor %}
+		 	<div>
+        {% for image in record.gallery %}		 		
+        <div class="grid">
+        <img class="hover-shadow float-left img-thumbnail img-item border-dark" style="margin-right: 5px;" src="{{image.path}}">
+      </div>
+      
+      {% endfor %}
+      </div>
+       </div>
 
   </div>
   <div class="jumbotron">
-    <h1 class="display-3">Trailer Area</h1>
-    <p class="lead">Jumbo helper text</p>
-    <hr class="my-2">
-    <p>More info</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-    </p>
+    <h1 class="display-3">{{record.name}} Trailer</h1>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/PVxprj4YSAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>
-
-
 {% else %}
     {{ notFoundMessage }}
 {% endif %}";s:4:"code";N;s:5:"title";s:12:"Movie single";s:3:"url";s:20:"/movie-single/:slug?";s:6:"layout";s:4:"Main";s:9:"is_hidden";s:1:"0";s:14:"builderDetails";a:5:{s:10:"modelClass";s:26:"Sunal\Movies\Models\Movies";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}}}
