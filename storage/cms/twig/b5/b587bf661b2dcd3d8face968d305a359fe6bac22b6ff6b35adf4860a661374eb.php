@@ -56,56 +56,50 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
             // line 11
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "poster", [], "any", false, false, false, 11), "path", [], "any", false, false, false, 11), "html", null, true);
             echo "\" alt=\"\">
-
-  <div class=\"card-img-overlay\" style=\"top: 30%; justify-content: center; align-items: center; text-align: center;\">
-    <h4 class=\"card-title\">Title</h4>
-    <p style=\"font-size: 50px;\" class=\"card-text vid\" data-toggle=\"modal\" data-target=\"#exampleModalCenter\"><i class=\"fa fa-play\"></i></p>
-    
-  </div>
 </div>
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "year", [], "any", false, false, false, 20), "html", null, true);
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "year", [], "any", false, false, false, 14), "html", null, true);
             echo "</h1>
     <h1 class=\"badge badge-success\">";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "quality", [], "any", false, false, false, 21), "html", null, true);
+            // line 15
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "quality", [], "any", false, false, false, 15), "html", null, true);
             echo "</h1>
 \t\t<div class=\"col-md-12\"><h5>";
-            // line 22
-            echo twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "description", [], "any", false, false, false, 22);
+            // line 16
+            echo twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "description", [], "any", false, false, false, 16);
             echo "</h5></div>
         <small>Genres: </small>
          ";
-            // line 24
+            // line 18
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "genres", [], "any", false, false, false, 24));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "genres", [], "any", false, false, false, 18));
             foreach ($context['_seq'] as $context["_key"] => $context["genre"]) {
-                // line 25
+                // line 19
                 echo "          <a href=\"/genres/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["genre"], "slug", [], "any", false, false, false, 25), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["genre"], "slug", [], "any", false, false, false, 19), "html", null, true);
                 echo "\"><small class=\"badge badge-secondary\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["genre"], "genre_title", [], "any", false, false, false, 25), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["genre"], "genre_title", [], "any", false, false, false, 19), "html", null, true);
                 echo "</small></a>
     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['genre'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 27
+            // line 21
             echo "      <br>
 \t\t \t<div>
         ";
-            // line 29
+            // line 23
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "gallery", [], "any", false, false, false, 29));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "gallery", [], "any", false, false, false, 23));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
                 echo "\t\t \t\t
         <div class=\"grid\">
         <img class=\"hover-shadow float-left img-thumbnail img-item border-dark\" style=\"margin-right: 5px;\" src=\"";
-                // line 31
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 31), "html", null, true);
+                // line 25
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 25), "html", null, true);
                 echo "\">
       </div>
       
@@ -114,26 +108,41 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 35
+            // line 29
             echo "      </div>
        </div>
 
   </div>
-  <div class=\"jumbotron\">
+  ";
+            // line 33
+            if (twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "trailer", [], "any", false, false, false, 33)) {
+                // line 34
+                echo "  <div class=\"jumbotron\">
     <h1 class=\"display-3\">";
-            // line 40
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "name", [], "any", false, false, false, 40), "html", null, true);
-            echo " Trailer</h1>
-    <iframe width=\"853\" height=\"480\" src=\"";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "trailer", [], "any", false, false, false, 41), "html", null, true);
-            echo "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+                // line 35
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "name", [], "any", false, false, false, 35), "html", null, true);
+                echo " Trailer</h1>
+    ";
+                // line 36
+                echo twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "trailer", [], "any", false, false, false, 36);
+                echo "
   </div>
-
-</section>
+  ";
+            } else {
+                // line 39
+                echo "  <div class=\"jumbotron\">
+    <h1 class=\"display-3\">";
+                // line 40
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "name", [], "any", false, false, false, 40), "html", null, true);
+                echo " Trailer not Available</h1>
+  </div>
+  ";
+            }
+            // line 43
+            echo "</section>
 ";
         } else {
-            // line 46
+            // line 45
             echo "    ";
             echo twig_escape_filter($this->env, ($context["notFoundMessage"] ?? null), "html", null, true);
             echo "
@@ -153,7 +162,7 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
 
     public function getDebugInfo()
     {
-        return array (  137 => 46,  129 => 41,  125 => 40,  118 => 35,  108 => 31,  101 => 29,  97 => 27,  86 => 25,  82 => 24,  77 => 22,  73 => 21,  69 => 20,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  146 => 45,  142 => 43,  136 => 40,  133 => 39,  127 => 36,  123 => 35,  120 => 34,  118 => 33,  112 => 29,  102 => 25,  95 => 23,  91 => 21,  80 => 19,  76 => 18,  71 => 16,  67 => 15,  63 => 14,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -169,12 +178,6 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
 <div class=\"justify-content-md-center clearfix bg-light\">
   <div class=\"card bg-dark text-white float-left\" style=\"max-width: 200px; max-height: 300px; margin: 10px;\">
   <img class=\"card-img\" src=\"{{record.poster.path}}\" alt=\"\">
-
-  <div class=\"card-img-overlay\" style=\"top: 30%; justify-content: center; align-items: center; text-align: center;\">
-    <h4 class=\"card-title\">Title</h4>
-    <p style=\"font-size: 50px;\" class=\"card-text vid\" data-toggle=\"modal\" data-target=\"#exampleModalCenter\"><i class=\"fa fa-play\"></i></p>
-    
-  </div>
 </div>
 \t<div style=\"padding-top:20px;\" class=\"container-fluid\">
     <h1 class=\"badge badge-success\">{{record.year}}</h1>
@@ -196,11 +199,16 @@ class __TwigTemplate_331ab93b914ed29ea72433939cf8e54b7c1cd567f7ef208d068b6746569
        </div>
 
   </div>
+  {% if record.trailer %}
   <div class=\"jumbotron\">
     <h1 class=\"display-3\">{{record.name}} Trailer</h1>
-    <iframe width=\"853\" height=\"480\" src=\"{{record.trailer}}\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+    {{record.trailer|raw}}
   </div>
-
+  {% else %}
+  <div class=\"jumbotron\">
+    <h1 class=\"display-3\">{{record.name}} Trailer not Available</h1>
+  </div>
+  {% endif %}
 </section>
 {% else %}
     {{ notFoundMessage }}

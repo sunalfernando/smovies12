@@ -1,4 +1,4 @@
-1586803122a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:4304:"==
+1586805319a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:4389:"==
 <html>
 	<head>
 		<title>{{ this.page.title }}</title>
@@ -15,7 +15,7 @@
 	<body>
 		<!-- Nav -->
 		<nav class=" bg-transparent navbar fixed-top navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" style="font-family: 'Modak', cursive; font-size: 30px; color: white;" href="{{'smovies'|page}}"><img id="logo" class="invert" src="{{'assets/images/logo.png'|theme | resize(100,50)}}"></a>
+		  <a class="navbar-brand" style="font-family: 'Modak', cursive; font-size: 30px; color: white;" href="{{'smovies'|page}}"><img id="logo" class="invert" src="{{'assets/images/Logo.png'|theme | resize(100,50)}}"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -84,7 +84,7 @@
 			
 
 	</body>
-</html>";s:5:"mtime";i:1586802516;s:6:"markup";s:4301:"<html>
+</html>";s:5:"mtime";i:1586804715;s:6:"markup";s:4386:"<html>
 	<head>
 		<title>{{ this.page.title }}</title>
 		<meta charset="utf-8" />
@@ -100,7 +100,7 @@
 	<body>
 		<!-- Nav -->
 		<nav class=" bg-transparent navbar fixed-top navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" style="font-family: 'Modak', cursive; font-size: 30px; color: white;" href="{{'smovies'|page}}"><img id="logo" class="invert" src="{{'assets/images/logo.png'|theme | resize(100,50)}}"></a>
+		  <a class="navbar-brand" style="font-family: 'Modak', cursive; font-size: 30px; color: white;" href="{{'smovies'|page}}"><img id="logo" class="invert" src="{{'assets/images/Logo.png'|theme | resize(100,50)}}"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>

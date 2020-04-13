@@ -1,4 +1,4 @@
-1586803514a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:2157:"title = "Movie single"
+1586805116a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1847:"title = "Movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -21,12 +21,6 @@ notFoundMessage = "Record not found"
 <div class="justify-content-md-center clearfix bg-light">
   <div class="card bg-dark text-white float-left" style="max-width: 200px; max-height: 300px; margin: 10px;">
   <img class="card-img" src="{{record.poster.path}}" alt="">
-
-  <div class="card-img-overlay" style="top: 30%; justify-content: center; align-items: center; text-align: center;">
-    <h4 class="card-title">Title</h4>
-    <p style="font-size: 50px;" class="card-text vid" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-play"></i></p>
-    
-  </div>
 </div>
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
@@ -48,17 +42,22 @@ notFoundMessage = "Record not found"
        </div>
 
   </div>
+  {% if record.trailer %}
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer</h1>
-    <iframe width="853" height="480" src="{{record.trailer}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {{record.trailer|raw}}
   </div>
-
+  {% else %}
+  <div class="jumbotron">
+    <h1 class="display-3">{{record.name}} Trailer not Available</h1>
+  </div>
+  {% endif %}
 </section>
 {% else %}
     {{ notFoundMessage }}
 {% endif %}
 
-";s:5:"mtime";i:1586802907;s:6:"markup";s:1894:"{% set record = builderDetails.record %}
+";s:5:"mtime";i:1586803547;s:6:"markup";s:1584:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
@@ -69,12 +68,6 @@ notFoundMessage = "Record not found"
 <div class="justify-content-md-center clearfix bg-light">
   <div class="card bg-dark text-white float-left" style="max-width: 200px; max-height: 300px; margin: 10px;">
   <img class="card-img" src="{{record.poster.path}}" alt="">
-
-  <div class="card-img-overlay" style="top: 30%; justify-content: center; align-items: center; text-align: center;">
-    <h4 class="card-title">Title</h4>
-    <p style="font-size: 50px;" class="card-text vid" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-play"></i></p>
-    
-  </div>
 </div>
 	<div style="padding-top:20px;" class="container-fluid">
     <h1 class="badge badge-success">{{record.year}}</h1>
@@ -96,11 +89,16 @@ notFoundMessage = "Record not found"
        </div>
 
   </div>
+  {% if record.trailer %}
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer</h1>
-    <iframe width="853" height="480" src="{{record.trailer}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {{record.trailer|raw}}
   </div>
-
+  {% else %}
+  <div class="jumbotron">
+    <h1 class="display-3">{{record.name}} Trailer not Available</h1>
+  </div>
+  {% endif %}
 </section>
 {% else %}
     {{ notFoundMessage }}
