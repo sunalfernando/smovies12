@@ -1,4 +1,4 @@
-1586853300a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1847:"title = "Movie single"
+1586853551a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1833:"title = "Movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -51,13 +51,12 @@ notFoundMessage = "Record not found"
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer not Available</h1>
   </div>
-  {% endif %}
 </section>
 {% else %}
     {{ notFoundMessage }}
 {% endif %}
 
-";s:5:"mtime";i:1586803547;s:6:"markup";s:1584:"{% set record = builderDetails.record %}
+";s:5:"mtime";i:1586852904;s:6:"markup";s:1570:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
@@ -98,7 +97,6 @@ notFoundMessage = "Record not found"
   <div class="jumbotron">
     <h1 class="display-3">{{record.name}} Trailer not Available</h1>
   </div>
-  {% endif %}
 </section>
 {% else %}
     {{ notFoundMessage }}
