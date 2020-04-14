@@ -1,4 +1,4 @@
-1586850158a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:8827:"==
+1586852993a:1:{s:8:"Main.htm";a:6:{s:8:"fileName";s:8:"Main.htm";s:7:"content";s:8768:"==
 <html>
 	<head>
 		<title>{{ this.page.title }}</title>
@@ -84,7 +84,6 @@
 			
 
 	</body>
-=======
 <html>
 	<head>
 		<title>{{ this.page.title }}</title>
@@ -170,8 +169,7 @@
 			
 
 	</body>
->>>>>>> e840f2f0549d1c80b0b110aada3b2bfe9147c228
-</html>";s:5:"mtime";i:1586849536;s:6:"markup";s:8824:"<html>
+</html>";s:5:"mtime";i:1586852387;s:6:"markup";s:8765:"<html>
 	<head>
 		<title>{{ this.page.title }}</title>
 		<meta charset="utf-8" />
@@ -256,7 +254,6 @@
 			
 
 	</body>
-=======
 <html>
 	<head>
 		<title>{{ this.page.title }}</title>
@@ -342,5 +339,4 @@
 			
 
 	</body>
->>>>>>> e840f2f0549d1c80b0b110aada3b2bfe9147c228
 </html>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

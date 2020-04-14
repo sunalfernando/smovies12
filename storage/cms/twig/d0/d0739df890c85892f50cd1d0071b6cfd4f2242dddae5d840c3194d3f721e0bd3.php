@@ -176,25 +176,24 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t\t
 
 \t</body>
-=======
 <html>
 \t<head>
 \t\t<title>";
-        // line 89
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 89), "title", [], "any", false, false, false, 89), "html", null, true);
+        // line 88
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 88), "title", [], "any", false, false, false, 88), "html", null, true);
         echo "</title>
 \t\t<meta charset=\"utf-8\" />
 \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
 \t\t<link rel=\"stylesheet\" href=\"";
-        // line 92
+        // line 91
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/bootstrap-lightbox.css");
         echo "\" />
 \t\t<link rel=\"stylesheet\" href=\"";
-        // line 93
+        // line 92
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/lightbox.css");
         echo "\" />
 \t\t<link rel=\"stylesheet\" href=\"";
-        // line 94
+        // line 93
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/main.css");
         echo "\" />
 \t\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
@@ -206,7 +205,7 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t<!-- Nav -->
 \t\t<nav class=\" bg-transparent navbar fixed-top navbar-expand-lg navbar-light\">
 \t\t  <a class=\"navbar-brand\" style=\"font-family: 'Modak', cursive; font-size: 30px; color: white;\" href=\"";
-        // line 103
+        // line 102
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("smovies");
         echo "\"><img id=\"logo\" class=\"invert\" src=\"";
         echo call_user_func_array($this->env->getFilter('resize')->getCallable(), [$this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Logo.png"), 100, 50]);
@@ -217,24 +216,24 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t\t  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
 \t\t\t    <ul class=\"links navbar-nav\">
 \t\t\t      <li style=\"border-radius: 50px;\" class=\"nav-item btn ";
-        // line 109
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 109), "id", [], "any", false, false, false, 109) == "smovies")) {
+        // line 108
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 108), "id", [], "any", false, false, false, 108) == "smovies")) {
             echo " active btn-outline-light bg-dark ";
         }
         echo "\">
 \t\t\t        <a style=\"color: white;\" class=\"nav-link\" href=\"";
-        // line 110
+        // line 109
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("smovies");
         echo "\">Home <span class=\"sr-only\">(current)</span></a>
 \t\t      </li>
 \t\t      <li style=\"border-radius: 50px;\" class=\"nav-item btn ";
-        // line 112
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 112), "id", [], "any", false, false, false, 112) == "movies")) {
+        // line 111
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 111), "id", [], "any", false, false, false, 111) == "movies")) {
             echo " active btn-outline-light bg-dark ";
         }
         echo "\">
 \t\t        <a style=\"color: white;\" class=\"nav-link\" href=\"";
-        // line 113
+        // line 112
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("movies");
         echo "\">Movies</a>
 \t\t      </li>
@@ -243,7 +242,7 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 </nav>
 \t\t\t
 \t\t";
-        // line 119
+        // line 118
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         echo "\t
 
@@ -264,31 +263,31 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 
 \t\t<!-- Scripts -->
 \t\t\t<script src=\"";
-        // line 137
+        // line 136
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jquery.min.js");
         echo "\"></script>
 \t\t\t<script src=\"";
-        // line 138
+        // line 137
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/jquery.scrollex.min.js");
         echo "\"></script>
 \t\t\t<script src=\"";
-        // line 139
+        // line 138
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/skel.min.js");
         echo "\"></script>
 \t\t\t<script src=\"";
-        // line 140
+        // line 139
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/util.js");
         echo "\"></script>
 \t\t\t<script defer src=\"";
-        // line 141
+        // line 140
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/lightbox.js");
         echo "\"></script>
 \t\t\t<script src=\"";
-        // line 142
+        // line 141
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/bootstrap-lightbox.min.js");
         echo "\"></script>
 \t\t\t<script src=\"";
-        // line 143
+        // line 142
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.js");
         echo "\"></script>
 \t\t\t<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
@@ -319,7 +318,6 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t\t
 
 \t</body>
->>>>>>> e840f2f0549d1c80b0b110aada3b2bfe9147c228
 </html>";
     }
 
@@ -335,7 +333,7 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 
     public function getDebugInfo()
     {
-        return array (  292 => 143,  288 => 142,  284 => 141,  280 => 140,  276 => 139,  272 => 138,  268 => 137,  247 => 119,  238 => 113,  232 => 112,  227 => 110,  221 => 109,  210 => 103,  198 => 94,  194 => 93,  190 => 92,  184 => 89,  149 => 57,  145 => 56,  141 => 55,  137 => 54,  133 => 53,  129 => 52,  125 => 51,  104 => 33,  95 => 27,  89 => 26,  84 => 24,  78 => 23,  67 => 17,  55 => 8,  51 => 7,  47 => 6,  41 => 3,  37 => 1,);
+        return array (  291 => 142,  287 => 141,  283 => 140,  279 => 139,  275 => 138,  271 => 137,  267 => 136,  246 => 118,  237 => 112,  231 => 111,  226 => 109,  220 => 108,  209 => 102,  197 => 93,  193 => 92,  189 => 91,  183 => 88,  149 => 57,  145 => 56,  141 => 55,  137 => 54,  133 => 53,  129 => 52,  125 => 51,  104 => 33,  95 => 27,  89 => 26,  84 => 24,  78 => 23,  67 => 17,  55 => 8,  51 => 7,  47 => 6,  41 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -425,7 +423,6 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t\t
 
 \t</body>
-=======
 <html>
 \t<head>
 \t\t<title>{{ this.page.title }}</title>
@@ -511,7 +508,6 @@ class __TwigTemplate_342543d6798954edfe8f0f5ae9e7f3cf433c45d19c2a85ba36b2cc4595d
 \t\t\t
 
 \t</body>
->>>>>>> e840f2f0549d1c80b0b110aada3b2bfe9147c228
 </html>", "/home/smovies12.tk/public_html/themes/smovies/layouts/Main.htm", "");
     }
 }

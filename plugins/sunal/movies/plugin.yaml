@@ -15,6 +15,10 @@ navigation:
                 url: sunal/movies/genres
                 icon: icon-tag
             side-menu-item2:
+
                 label: 'Go back'
+
+                label: 'Go Back'
+
                 url: sunal/movies/movie
                 icon: icon-arrow-circle-left
