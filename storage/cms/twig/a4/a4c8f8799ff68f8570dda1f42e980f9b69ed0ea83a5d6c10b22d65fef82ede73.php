@@ -136,11 +136,9 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["record"] ?? null), "name", [], "any", false, false, false, 40), "html", null, true);
                 echo " Trailer not Available</h1>
   </div>
-  ";
-            }
-            // line 43
-            echo "</section>
+</section>
 ";
+            }
         } else {
             // line 45
             echo "    ";
@@ -162,7 +160,7 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
 
     public function getDebugInfo()
     {
-        return array (  146 => 45,  142 => 43,  136 => 40,  133 => 39,  127 => 36,  123 => 35,  120 => 34,  118 => 33,  112 => 29,  102 => 25,  95 => 23,  91 => 21,  80 => 19,  76 => 18,  71 => 16,  67 => 15,  63 => 14,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  144 => 45,  136 => 40,  133 => 39,  127 => 36,  123 => 35,  120 => 34,  118 => 33,  112 => 29,  102 => 25,  95 => 23,  91 => 21,  80 => 19,  76 => 18,  71 => 16,  67 => 15,  63 => 14,  57 => 11,  48 => 6,  46 => 5,  43 => 4,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -208,8 +206,8 @@ class __TwigTemplate_ef9746b23e7ef1bfb2c96d205a11e23cd563aad789b178de01c108893bd
   <div class=\"jumbotron\">
     <h1 class=\"display-3\">{{record.name}} Trailer not Available</h1>
   </div>
-  {% endif %}
 </section>
+{% endif %}
 {% else %}
     {{ notFoundMessage }}
 {% endif %}", "F:\\website\\smovies/themes/smovies/pages/movie-single.htm", "");
