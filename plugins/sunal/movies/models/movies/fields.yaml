@@ -75,7 +75,7 @@ tabs:
             type: relation
             tab: 'Tab 1'
         trailer:
-            label: Trailer
-            span: auto
+            label: 'Trailer Embeded link'
+            span: right
             type: text
             tab: 'Tab 1'
