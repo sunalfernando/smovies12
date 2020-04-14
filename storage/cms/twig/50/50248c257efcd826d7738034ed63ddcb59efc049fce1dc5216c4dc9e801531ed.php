@@ -66,7 +66,7 @@ class __TwigTemplate_46a4334c0c3e76658f26cef69770fef635bad06a7d275d7766cf569ee1a
         // line 17
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("smovies");
         echo "\"><img id=\"logo\" class=\"invert\" src=\"";
-        echo call_user_func_array($this->env->getFilter('resize')->getCallable(), [$this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.png"), 100, 50]);
+        echo call_user_func_array($this->env->getFilter('resize')->getCallable(), [$this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Logo.png"), 100, 50]);
         echo "\"></a>
 \t\t  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t    <span class=\"navbar-toggler-icon\"></span>
@@ -212,7 +212,7 @@ class __TwigTemplate_46a4334c0c3e76658f26cef69770fef635bad06a7d275d7766cf569ee1a
 \t<body>
 \t\t<!-- Nav -->
 \t\t<nav class=\" bg-transparent navbar fixed-top navbar-expand-lg navbar-light\">
-\t\t  <a class=\"navbar-brand\" style=\"font-family: 'Modak', cursive; font-size: 30px; color: white;\" href=\"{{'smovies'|page}}\"><img id=\"logo\" class=\"invert\" src=\"{{'assets/images/logo.png'|theme | resize(100,50)}}\"></a>
+\t\t  <a class=\"navbar-brand\" style=\"font-family: 'Modak', cursive; font-size: 30px; color: white;\" href=\"{{'smovies'|page}}\"><img id=\"logo\" class=\"invert\" src=\"{{'assets/images/Logo.png'|theme | resize(100,50)}}\"></a>
 \t\t  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t    <span class=\"navbar-toggler-icon\"></span>
 \t\t  </button>

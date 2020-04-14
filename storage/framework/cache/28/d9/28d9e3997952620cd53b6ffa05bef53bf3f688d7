@@ -1,4 +1,4 @@
-1586805209a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1906:"title = "Movie single"
+1586850332a:1:{s:16:"movie-single.htm";a:10:{s:8:"fileName";s:16:"movie-single.htm";s:7:"content";s:1906:"title = "Movie single"
 url = "/movie-single/:slug?"
 layout = "Main"
 is_hidden = 0
@@ -57,7 +57,7 @@ notFoundMessage = "Record not found"
     {{ notFoundMessage }}
 {% endif %}
 
-";s:5:"mtime";i:1586803408;s:6:"markup";s:1629:"{% set record = builderDetails.record %}
+";s:5:"mtime";i:1586849731;s:6:"markup";s:1629:"{% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
