@@ -194,4 +194,13 @@
   'Backend\\Classes\\FormWidgetBase' => 'modules/backend/classes/FormWidgetBase.php',
   'Backend\\FormWidgets\\CodeEditor' => 'modules/backend/formwidgets/CodeEditor.php',
   'Cms\\FormWidgets\\Components' => 'modules/cms/formwidgets/Components.php',
+  'Backend\\Classes\\ControllerBehavior' => 'modules/backend/classes/ControllerBehavior.php',
+  'Backend\\Behaviors\\ListController' => 'modules/backend/behaviors/ListController.php',
+  'Backend\\Behaviors\\FormController' => 'modules/backend/behaviors/FormController.php',
+  'Backend\\Behaviors\\ReorderController' => 'modules/backend/behaviors/ReorderController.php',
+  'Backend\\Widgets\\Toolbar' => 'modules/backend/widgets/Toolbar.php',
+  'Backend\\Traits\\PreferenceMaker' => 'modules/backend/traits/PreferenceMaker.php',
+  'Backend\\Widgets\\Lists' => 'modules/backend/widgets/Lists.php',
+  'Backend\\Widgets\\Search' => 'modules/backend/widgets/Search.php',
+  'Backend\\Classes\\ListColumn' => 'modules/backend/classes/ListColumn.php',
 );
