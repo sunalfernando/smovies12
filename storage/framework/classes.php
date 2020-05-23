@@ -212,4 +212,10 @@
   'Backend\\Widgets\\Table' => 'modules/backend/widgets/Table.php',
   'Backend\\Widgets\\Table\\DataSourceBase' => 'modules/backend/widgets/table/DataSourceBase.php',
   'Backend\\Widgets\\Table\\ClientMemoryDataSource' => 'modules/backend/widgets/table/ClientMemoryDataSource.php',
+  'Backend\\Models\\UserRole' => 'modules/backend/models/UserRole.php',
+  'Backend\\Models\\UserGroup' => 'modules/backend/models/UserGroup.php',
+  'System\\Helpers\\Cache' => 'modules/system/helpers/Cache.php',
+  'Backend\\Widgets\\Filter' => 'modules/backend/widgets/Filter.php',
+  'Backend\\Classes\\FilterScope' => 'modules/backend/classes/FilterScope.php',
+  'Backend\\FormWidgets\\PermissionEditor' => 'modules/backend/formwidgets/PermissionEditor.php',
 );
