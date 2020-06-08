@@ -31,7 +31,7 @@
   'RainLab\\Builder\\Classes\\BaseModel' => 'plugins/rainlab/builder/classes/BaseModel.php',
   'RainLab\\Builder\\Classes\\YamlModel' => 'plugins/rainlab/builder/classes/YamlModel.php',
   'RainLab\\Builder\\Classes\\PluginYamlModel' => 'plugins/rainlab/builder/classes/PluginYamlModel.php',
-  'RainLab\\Builder\\Classes\\PluginBaseModel' => 'plugins\\rainlab\\builder\\classes\\PluginBaseModel.php',
+  'RainLab\\Builder\\Classes\\PluginBaseModel' => 'plugins/rainlab/builder/classes/PluginBaseModel.php',
   'RainLab\\Builder\\Classes\\IconList' => 'plugins/rainlab/builder/classes/IconList.php',
   'sunal\\movies\\Plugin' => 'plugins/sunal/movies/Plugin.php',
   'RainLab\\Builder\\Classes\\PluginCode' => 'plugins/rainlab/builder/classes/PluginCode.php',
@@ -218,4 +218,6 @@
   'Backend\\Widgets\\Filter' => 'modules/backend/widgets/Filter.php',
   'Backend\\Classes\\FilterScope' => 'modules/backend/classes/FilterScope.php',
   'Backend\\FormWidgets\\PermissionEditor' => 'modules/backend/formwidgets/PermissionEditor.php',
+  'System\\Classes\\MediaLibrary' => 'modules/system/classes/MediaLibrary.php',
+  'System\\Classes\\MediaLibraryItem' => 'modules/system/classes/MediaLibraryItem.php',
 );
